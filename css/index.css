@@ -1,0 +1,592 @@
+*{
+	margin:0;
+	padding:0;
+	font-size: 14px;
+}
+ol,ul{
+	list-style-type:none;
+}
+a{
+	color:#666;
+	text-decoration: none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.fade{
+	opacity: 0;
+}
+.show{
+	opacity:1;
+}
+#top,#header,#nav,#banner,#star,#accessory,#world,#serve,#after-sale,#footer{
+	height: 100px;
+	width: 100%;
+	/*border:1px solid #000;*/
+}
+.container{
+	width: 1280px;
+	/*border: 1px solid #f00;*/
+	margin: 0 auto;
+}
+/*set the style of the top part*/
+#top{
+	height: 5px;
+	background-color: #00955f;
+
+}
+/*set the style of the header part*/
+#header{
+	height: 30px;
+	background-color: #2d2d2d;
+}
+#header .xlwb{
+	width: 20px;
+	height: 17px;
+	background: url(../img/icons.png) no-repeat -47px -95px;
+}
+#header .txwb{
+	width: 20px;
+	height: 20px;
+	background: url(../img/icons.png) no-repeat -27px -92px;
+}
+#header .header_left div{
+	float:left;
+	margin: 5px 10px 0;
+
+}
+#header .tel{
+	color:#17925f
+}
+#header ul li{
+	float: left;
+	line-height: 30px;
+}
+#header li a{
+	color: #b2b2b2;
+	font-size: 14px;
+	border-right: 1px solid #b2b2b2;
+	padding: 0 15px;
+
+}
+#header li a:hover{
+	color:#00925f;
+}
+
+#header .shop_car a{
+	padding-left: 8px;
+	border:none;
+}
+#header .shop_car span{
+	width: 19px;
+	height: 16px;
+	background: url(../img/icons.png) no-repeat 0 -96px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+/*set the style of the nav part*/
+#nav{
+	height: 90px;
+	background-color: #eee;
+}
+
+#nav ul li{
+	float: left;
+	line-height: 90px;
+	margin:0 10px;
+	
+}
+#nav li a{
+	color:#666;
+	font-weight: bold;
+}
+#nav li a:hover{
+	color:#00925f;
+	
+}
+/*set the style of the OPPO star part*/
+#star{
+	height: 630px;
+	background-color: #f2f2f2;
+	/*set overflow:hidden for the parent element to avoid collapsing of margins of the parent element and the child element; other solutions include setting (border-top: 1px solid transparent) for the parent element, setting (padding-top: 1px) for the parent element, and setting (float: left) or (position: absolute) for the parent element or the child element.*/
+	overflow: hidden;
+
+}
+#star .star_top{
+	text-align: center;
+	margin: 20px 0;	
+}
+#star li{
+	width: 300px;
+	float:left;
+	border-bottom: 4px solid #dfdfdf;
+	transition: all .3s;
+}
+#star li:hover{
+	border-bottom: 4px solid #4fb59d;
+	transform:translateY(-10px);
+
+}
+#star li img{
+	width: 300px;
+
+}
+#star li h2{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 20px;
+
+}
+#star li p{
+	text-align: center;
+	margin: 10px 0;
+	font-size:14px ;
+	color:#bdbdbd;
+
+}
+#star li .money{
+	font-size: 14px;
+	color: #00925f;
+
+}
+#star li span{
+	
+	background: url(../img/icons-1.png) no-repeat -177px -1014px;
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+#star .line{
+	width: 0;
+	height: 450px;
+	border-left:1px solid #eaeaea;
+	margin: 0 10px;
+}
+#star ul{
+	width: 1263px;
+	margin: 10px auto;
+
+}
+/*set the style of the OPPO accessory part*/
+#accessory{	
+	height: 950px;
+	background-color: #f6f6f6;
+	overflow:hidden;
+}
+
+#accessory .acc_top{
+	text-align: center;
+	margin: 20px 0;
+}
+#accessory .acc_main{
+	width: 1090px;
+	margin:10px auto;
+
+}
+#accessory .acc_left .a1{
+	cursor:pointer;
+}
+#accessory .acc_left .a3{
+	cursor:pointer;
+}
+#accessory .acc_left .a4{
+	cursor:pointer;
+}
+#accessory .acc_right div{
+	cursor:pointer;
+}
+#accessory .acc_left{
+	width: 540px;
+	float:left;
+}
+#accessory .acc_left>div>div{
+	float:left;
+	border-bottom: 3px solid #eaeaea;
+	margin:10px;
+	transition: all .3s;
+}
+#accessory .acc_left>div>div:hover{
+	border-bottom: 3px solid #00925f;
+	transform: translateY(-10px);
+}
+#accessory .acc_left img{
+	width: 250px;
+}
+#accessory .acc_left>div:last-child img{
+	width: 520px;
+}
+#accessory .acc_all{
+	width: 250px;
+	height: 250px;
+	border: 3px solid #eaeaea;
+	background-color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#accessory .acc_all p:first-child{
+	text-align: center;
+	font-weight:bold;
+	font-size:14px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+#accessory .acc_all li{
+	float:left;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+#accessory a{
+	color:#000;
+}
+#accessory a:hover{
+	color:#00925f;
+	font-weight: bold;
+}
+#accessory .acc_all .line{
+	width: 150px;
+	height:0;
+	border-top: 1px solid #ccc;
+	clear:both;
+	margin:15px auto;
+}
+#accessory .acc_all p:last-child{
+	text-align: center;
+}
+#accessory .acc_all p:last-child:hover{
+	font-weight: bold;
+	color:#00925f;
+}
+#accessory .acc_all span{
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/icons-1.png) no-repeat -177px -1014px;
+	margin-left: 10px;
+}
+#accessory .acc_right{
+	width: 540px;
+	float:right;	
+}
+#accessory .acc_right>div>div{
+	float:left;
+	margin: 10px;
+	border-bottom:3px solid #eaeaea;
+	transition: all .3s;
+}
+#accessory .acc_right>div>div:hover{
+	border-bottom:3px solid #00925f;
+	transform: translateY(-10px);
+}
+
+#accessory .acc_right img{
+	width: 250px;
+}
+#accessory .acc_right div:first-child div img{
+	width: 520px;
+	height: 250px;
+}
+#accessory .acc_right div:last-child div img{
+	height: 241px;
+}
+/*set the style of the world of OPPO part*/
+#world{
+	height: 700px;
+	background-color: #eaeaea;
+	overflow: hidden;
+}
+#world .world_top{
+	text-align: center;
+	margin: 20px 0;
+}
+#world .world_main{
+	width: 1214px;
+	margin:10px auto;
+}
+#world .world_left{
+	width: 800px;
+}
+#world .world_left>div{
+	float: left;
+	margin: 10px;
+	cursor:pointer;
+}
+#world .world_left>div>div{
+	border-bottom: 3px solid #eaeaea;
+	transition: all .3s;
+}
+#world .world_left>div>div:hover{
+	border-bottom: 3px solid #00925f;
+	transform: translateY(-10px);
+}
+#world .world_right{
+	width: 400px;
+	height: 566px;
+	background-color: #fff;
+	margin-top: 10px;
+}
+#world .world_right img{
+	height: 100px;
+}
+#world .world_right .world_title{
+	height: 60px;
+}
+#world .world_right .world_title div{
+	width: 200px;
+	height: 60px;
+	background-color: #eaeaea;
+	text-align: center;
+	line-height: 60px;
+	float:left;
+	border-top: 3px solid #eaeaea;
+	font-weight: bold;
+}
+#world .world_right .world_title div:first-child{
+	border-top: 3px solid #00925f;
+	background-color: #fff;
+}
+#world .world_right ul li{
+	background-color: #eaeaea;
+	margin: 20px 10px;
+}
+#world .world_right dl{
+	width: 380px;
+	height: 100px;
+	position: relative;
+}
+#world .world_right dl dt{
+	position: absolute;
+	
+}
+#world .world_right dl dd{
+	position: absolute;
+	top:20px;
+	left:140px;
+}
+#world .world_right a:hover{
+	color:#000;
+}
+/*set the style of the serve part*/
+#serve{
+	height: 100px;
+	background-color: #fff;
+}
+#serve dl{
+	width: 200px;
+	height: 100px;
+	position: relative;
+}
+#serve .dt1{
+	width: 41px;
+	height: 41px;
+	background: url(../img/icons.png) no-repeat 0px -44px;
+	position:absolute;
+	top: 30px;
+	left: 10px;
+}
+#serve .dt2{
+	width: 41px;
+	height: 41px;
+	background: url(../img/icons.png) no-repeat -51px -44px;
+	position:absolute;
+	top: 30px;
+	left: 10px;
+}
+#serve .dt3{
+	width: 41px;
+	height: 41px;
+	background: url(../img/icons.png) no-repeat -101px -44px;
+	position:absolute;
+	top: 30px;
+	left: 10px;
+}
+#serve .dt4{
+	width: 41px;
+	height: 41px;
+	background: url(../img/icons.png) no-repeat -151px -44px;
+	position:absolute;
+	top: 30px;
+	left: 10px;
+}
+#serve .dt5{
+	width: 41px;
+	height: 41px;
+	background: url(../img/icons.png) no-repeat -200px -43px;
+	position:absolute;
+	top: 30px;
+	left: 10px;
+}
+#serve dl .dd1{
+	position: absolute;
+	top: 30px;
+	left: 60px;
+	font-weight: bold;
+}
+#serve dl .dd2{
+	position: absolute;
+	top: 50px;
+	left: 60px;
+	color:#aaa;
+	font-size: 12px;
+}
+#serve li{
+	float:left;
+	margin: 0 10px;
+	transition: all .3s;
+}
+#serve li:hover{
+	transform: translateY(-10px);
+}
+#serve ul{
+	width: 1110px;
+	margin: 0 auto;
+	height: 99px;
+	border-bottom: 1px solid #666;
+}
+/*set the style of the after-sale part*/
+#after_sale{
+	height: 200px;
+	background-color: #fff;
+}
+#after_sale ul{
+	width: 1110px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+}
+#after_sale ul>li{
+	width: 140px;
+	float: left;
+	text-align: center;
+	margin: 0 20px;
+}
+#after_sale ol>li{
+	line-height: 30px;
+}
+#after_sale span{
+	margin-right: 5px;
+}
+#after_sale .xl span{
+	width: 22px;
+	height: 16px;
+	background: url(../img/icons-1.png) no-repeat 0px -883px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#after_sale .xl:hover span{
+	background: url(../img/icons-1.png) no-repeat -144px -883px;
+}
+#after_sale .tx span{
+	width: 16px;
+	height: 20px;
+	background: url(../img/icons-1.png) no-repeat -2px -910px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#after_sale .tx:hover span{
+	background: url(../img/icons-1.png) no-repeat -146px -910px;
+}
+#after_sale .rr span{
+	width: 17px;
+	height: 16px;
+	background: url(../img/icons-1.png) no-repeat -2px -940px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#after_sale .rr:hover span{
+	background: url(../img/icons-1.png) no-repeat -146px -940px;
+}
+#after_sale .qq span{
+	width: 21px;
+	height: 18px;
+	background: url(../img/icons-1.png) no-repeat 0px -854px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#after_sale .qq:hover span{
+	background: url(../img/icons-1.png) no-repeat -144px -854px;
+}
+#after_sale dl{
+	position:relative;
+	height: 70px;
+	width: 200px;
+}
+#after_sale dt{
+	position: absolute;
+}
+#after_sale .dd1{
+	position: absolute;
+	left:40px;
+	font-size: 20px;
+	color:#00925f;
+}
+#after_sale .dd2{
+	position: absolute;
+	left:40px;
+	top:30px;
+}
+#after_sale .dt1{
+	width: 32px;
+	height: 32px;
+	background: url(../img/icons.png) no-repeat;
+}
+#after_sale .dt2{
+	width: 32px;
+	height: 32px;
+	background: url(../img/icons.png) no-repeat -40px 0;
+}
+#after_sale a:hover{
+	color:#00925f;
+}
+
+/*set the style of the footer part*/
+#footer{
+	height: 40px;
+	background-color: #2d2d2d;
+}
+#footer p{
+	line-height: 40px;
+}
+#footer p span{
+	color:#828282;
+	margin: 0 330px 0 20px;
+}
+#footer p a {
+	color: #fff;
+	margin: 0 10px;
+}
+#footer img{
+	margin-left: 20px;
+}
+#footer p a:hover{
+	color: #00925f;
+}
+/*set the style of the back-to-top part*/
+#to_top{
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	right: 0px;
+	bottom: 50px;
+	z-index: 100;
+
+}
+#to_top a{
+	display: none;
+	width: 80px;
+	height: 80px;
+	background: url("../img/totop.png") no-repeat 0px 0px;
+	border-radius: 9px;
+}
+#to_top a:hover{
+	background: url("../img/totop.png") no-repeat -84px 0px;
+	border-radius: 9px;
+}
