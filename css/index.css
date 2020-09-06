@@ -22,15 +22,13 @@ a{
 .show{
 	opacity:1;
 }
-#top,#header,#nav,#banner,#star,#accessory,#world,#serve,#after-sale,#footer{
-	height: 100px;
-	width: 100%;
-	/*border:1px solid #000;*/
-}
 .container{
 	width: 1280px;
-	/*border: 1px solid #f00;*/
 	margin: 0 auto;
+}
+#top, #header, #nav, #banner, #star, #accessory, #world, #serve, #after-sale, #footer{
+	height: 100px;
+	width: 100%;
 }
 /*set the style of the top part*/
 #top{
@@ -114,7 +112,6 @@ a{
 	background-color: #f2f2f2;
 	/*set overflow:hidden for the parent element to avoid collapsing of margins of the parent element and the child element; other solutions include setting (border-top: 1px solid transparent) for the parent element, setting (padding-top: 1px) for the parent element, and setting (float: left) or (position: absolute) for the parent element or the child element.*/
 	overflow: hidden;
-
 }
 #star .star_top{
 	text-align: center;
@@ -129,38 +126,31 @@ a{
 #star li:hover{
 	border-bottom: 4px solid #4fb59d;
 	transform:translateY(-10px);
-
 }
 #star li img{
 	width: 300px;
-
 }
 #star li h2{
 	margin-top: 10px;
 	text-align: center;
 	font-size: 20px;
-
 }
 #star li p{
 	text-align: center;
 	margin: 10px 0;
 	font-size:14px ;
 	color:#bdbdbd;
-
 }
 #star li .money{
 	font-size: 14px;
 	color: #00925f;
-
 }
-#star li span{
-	
+#star li span{	
 	background: url(../img/icons-1.png) no-repeat -177px -1014px;
 	width: 13px;
 	height: 13px;
 	display: inline-block;
-	vertical-align: middle;
-	
+	vertical-align: middle;	
 }
 #star .line{
 	width: 0;
@@ -171,7 +161,6 @@ a{
 #star ul{
 	width: 1263px;
 	margin: 10px auto;
-
 }
 /*set the style of the OPPO accessory part*/
 #accessory{	
@@ -179,7 +168,6 @@ a{
 	background-color: #f6f6f6;
 	overflow:hidden;
 }
-
 #accessory .acc_top{
 	text-align: center;
 	margin: 20px 0;
@@ -187,7 +175,6 @@ a{
 #accessory .acc_main{
 	width: 1090px;
 	margin:10px auto;
-
 }
 #accessory .acc_left .a1{
 	cursor:pointer;
@@ -286,7 +273,6 @@ a{
 	border-bottom:3px solid #00925f;
 	transform: translateY(-10px);
 }
-
 #accessory .acc_right img{
 	width: 250px;
 }
@@ -577,7 +563,6 @@ a{
 	right: 0px;
 	bottom: 50px;
 	z-index: 100;
-
 }
 #to_top a{
 	display: none;
@@ -589,4 +574,88 @@ a{
 #to_top a:hover{
 	background: url("../img/totop.png") no-repeat -84px 0px;
 	border-radius: 9px;
+}
+/* set the style of the login part */
+#login{
+    display: none;
+    width: 512px;
+    height: 280px;
+    position: fixed;
+    border: 1px solid #2CAD6F;
+    left: 50%;
+    top: 50%;
+    background: #ffffff;
+    box-shadow: 10px 10px 20px #2CAD6F;
+    z-index: 250;
+    transform: translate(-50%, -50%);
+}
+#loginTitle{
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: #2CAD6F;
+    position: relative;
+    cursor: move;
+}
+#loginTitle span{
+    position: absolute;
+    font-size: 12px;
+    right: -20px;
+    top: -30px;
+    background: #ffffff;
+    border: solid 1px #2CAD6F;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+#loginTitle span a{
+    display: block;
+}
+.login-input{
+    overflow: hidden;
+    margin: 0px 0px 20px 0px;
+}
+.login-input label {
+    float: left;
+    width: 90px;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+}
+.login-input input{
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    width: 350px;
+    border: 1px solid #ebebeb;
+    outline: none;
+    text-indent: 5px;
+}
+#loginBtn{
+	display: block;
+    width: 50%;
+    margin: 30px auto 0px auto;
+    line-height: 40px;
+    font-size: 14px;
+    border: 1px solid #ebebeb;
+    outline-color: #2CAD6F;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+/* set the style of the background layer of the login part */
+#bg{
+	width: 100%;
+	height: 100%;
+    display: none;
+    z-index: 200;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
 }

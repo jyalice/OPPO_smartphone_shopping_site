@@ -60,7 +60,7 @@
 				<div class="tel">4001-666-888</div>
 			</div>
 			<ul class="right">
-				<li><a href="#">Log in</a></li>
+				<li><a href="javascript:;" id="link">Log in</a></li>
 				<li><a href="#">Register</a></li>
 				<li><a href="#">Membership rewards</a></li>
 				<li><a href="#">Service center</a></li>
@@ -294,7 +294,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- the serve part of the webpage -->
 	<div id="serve">
 		<div class="container">
@@ -420,10 +419,27 @@
 	<div id="to_top">
 		<a href="javascript:;" id="btn"></a>
 	</div>
-
+	<!-- the login part of the webpage -->
+	<div id="login">
+        <div id="loginTitle">LOG IN
+            <span><a id="closeBtn" href="javascript:void(0);">close</a></span>
+        </div>
+        <form action="index.html">
+	        <div class="login-input">
+	            <label for="username">Username: </label>
+	            <input type="text" placeholder="Please enter your username" name="uname" id="username">
+	        </div>
+	        <div class="login-input">
+	            <label for="password">Password: </label>
+	            <input type="password" placeholder="Please enter your password" name="pswd" id="password">
+	        </div>      
+	        <button type="submit" id="loginBtn">log in</button>
+        </form>      
+    </div>
+    <!-- the background layer of the login part -->
+    <div id="bg"></div>
 	<script src="js/jquery.js"></script>
 	<script src="js/index.js"></script>	
-
 	<!-- When the element with the id of "btn" is clicked, the webpage will be scrolled back to top. The further it is from the top, the faster it is scrolled. -->
 	<script>
 		$(window).load(function(){ 
@@ -482,6 +498,5 @@
 	        }
 	    });
 	</script>	
-
 </body>
 </html>
